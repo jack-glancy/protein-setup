@@ -27,4 +27,15 @@ $ grep 'SO4' original.pdb > SO4.pdb
 ```
 $ pdb4amber ligand.pdb > ligand_amb.pdb
 ```
-12. For organic ligands, one can reduce the 
+12. For organic ligands, one can reduce the ligand_amb.pdb structure with the command:
+```
+$ reduce ligand_amb.pdb > ligand_amb_h.pdb
+```
+13. This pdb should be visually inspected to check that the ligand is appropriately protonated. Also if the organic ligand is not neutral, this should be changed manually.
+    I use the Chemcraft software, but this can also be done through the molefacture extension in VMD.
+14. From the fully reduced ligand pdb, one can run antechamber to start parametrising your ligand. This is started by making a mol2 file.
+```
+$ antechamber -i ligand_amb_h.pdb -fi pdb -o ligand.mol2 -fo mol2 -c bcc -s 2
+or if your ligand is charged add the -nc <charge> flag. Here we are parametrising a +1 cationic ligand.
+$ antechamber -i ligand_amb_h.pdb -fi pdb -o ligand.mol2 -fo mol2 -c bcc -s 2 -nc 1
+```
