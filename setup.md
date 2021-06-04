@@ -37,7 +37,9 @@ $ reduce ligand_amb.pdb > ligand_amb_h.pdb
 ```
 $ antechamber -i ligand_amb_h.pdb -fi pdb -o ligand.mol2 -fo mol2 -c bcc -s 2
 ```
-    or if your ligand is charged add the -nc <charge> flag. Here we are parametrising a +1 cationic ligand.
+
+or if your ligand is charged add the -nc <charge> flag. Here we are parametrising a +1 cationic ligand.
+
 ```
 $ antechamber -i ligand_amb_h.pdb -fi pdb -o ligand.mol2 -fo mol2 -c bcc -s 2 -nc 1
 ```
