@@ -5,13 +5,11 @@
 4. Select pH that experiment was run at.
 5. Process structure.
 6. Download the output.pdb file.
-```
-    Note: If your pdb is made up of multiple models, as is the case for some biological 
-    assemblies of dimers/trimers, then the easiest way I've found to get H++ to work 
-    on each protein unit is to submit the original pdb (which will process the first model), 
-    then delete the first model and resubmit (that'll process the second one) 
-    and so on and then combine the outputted pdbs through concatenation.
-```
+> Note: If your pdb is made up of multiple models, as is the case for some biological 
+> assemblies of dimers/trimers, then the easiest way I've found to get H++ to work 
+> on each protein unit is to submit the original pdb (which will process the first model), 
+> then delete the first model and resubmit (that'll process the second one) 
+> and so on and then combine the outputted pdbs through concatenation.
 7. This should give you a fully/correctly protonated output.pdb for the protein without any ligands. To ensure this structure is in amber format run:
 ```
 $ pdb4amber output.pdb > output_amb.pdb
