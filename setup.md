@@ -17,6 +17,7 @@
 ```
 $ pdb4amber output.pdb > output_amb.pdb
 ```
+***
 ## Ligand Parametrisation
 ***
 9. Now extract the pdb data for one of each ligand from the original pdb into respective ligand1.pdb, ligand2.pdb etc. For example, if you have two ligands with
@@ -63,6 +64,7 @@ $ quit
 ```
 > Note: The resname LIG needs to match the resname of the ligand in the pdb, as this will be referred to in the lib file. 
 17. Generate lib, topology and crd files for all the ligands in your system.
+***
 ## Final PDB Setup
 ***
 18. Extract all the coordinates of the ligands from the original pdb into a separate pdb. This may have been accomplished in Step 9, if you only have one iteration of each ligand in your system.
