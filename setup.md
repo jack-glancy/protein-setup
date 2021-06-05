@@ -85,4 +85,5 @@ $ saveAmberParm enz solvated_enz.top solvated_enz.crd
 $ savepdb enz solvated_enz.pdb
 $ quit
 ```
+> Note: The '14.0' at the end of the solvateOct command specifies that the edge of the water box is no closer than 14.0 A from the farthest protein residue. On the addIons command, the Na+ is interchangeable with Cl- if the overall system is net positive prior to solvation, and the number '9' denotes the number of ions to add.  
 23. All being well, this should output all the files needed for simulation.  
