@@ -1,4 +1,4 @@
-# protein_setup
+# Protein Setup
 ***
 Repo for detailing protocol for protein setup for amber/openmm. \
 Setup.md contains protocol outline.
