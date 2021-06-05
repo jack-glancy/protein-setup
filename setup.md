@@ -1,4 +1,5 @@
-# System setup
+# System setup protocol
+#### Written by Jack Glancy
 ***
 ## PDB Protonation
 ***
